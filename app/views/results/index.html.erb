@@ -1,0 +1,30 @@
+<h1>Listing results</h1>
+
+<table>
+  <tr>
+    <th>Race</th>
+    <th>Driver</th>
+    <th>Ledlap</th>
+    <th>Ledmost</th>
+    <th>Lapsled</th>
+    <th>Finish</th>
+  </tr>
+
+<% @results.each do |result| %>
+  <tr>
+    <td><%=h result.race_id %></td>
+    <td><%=h result.driver_id %></td>
+    <td><%=h result.ledlap %></td>
+    <td><%=h result.ledmost %></td>
+    <td><%=h result.lapsled %></td>
+    <td><%=h result.finish %></td>
+    <td><%= link_to 'Show', result %></td>
+    <td><%= link_to 'Edit', edit_result_path(result) %></td>
+    <td><%= link_to 'Destroy', result, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New result', new_result_path %>

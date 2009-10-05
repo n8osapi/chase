@@ -1,0 +1,36 @@
+<h1>Editing result</h1>
+
+<% form_for(@result) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :race_id %><br />
+    <%= f.text_field :race_id %>
+  </p>
+  <p>
+    <%= f.label :driver_id %><br />
+    <%= f.text_field :driver_id %>
+  </p>
+  <p>
+    <%= f.label :ledlap %><br />
+    <%= f.check_box :ledlap %>
+  </p>
+  <p>
+    <%= f.label :ledmost %><br />
+    <%= f.check_box :ledmost %>
+  </p>
+  <p>
+    <%= f.label :lapsled %><br />
+    <%= f.text_field :lapsled %>
+  </p>
+  <p>
+    <%= f.label :finish %><br />
+    <%= f.text_field :finish %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @result %> |
+<%= link_to 'Back', results_path %>

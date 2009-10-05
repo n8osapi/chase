@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @driver.name %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%=h @driver.number %>
+</p>
+
+
+<%= link_to 'Edit', edit_driver_path(@driver) %> |
+<%= link_to 'Back', drivers_path %>

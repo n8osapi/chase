@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  race_id: 1
+  driver_id: 1
+  ledlap: false
+  ledmost: false
+  lapsled: 1
+  finish: 1
+
+two:
+  race_id: 1
+  driver_id: 1
+  ledlap: false
+  ledmost: false
+  lapsled: 1
+  finish: 1
