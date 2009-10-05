@@ -4,12 +4,16 @@
   <tr>
     <th>Name</th>
     <th>Number</th>
+    <th>Races</th>
+    <th>Score</th>
   </tr>
 
 <% @drivers.each do |driver| %>
   <tr>
     <td><%=h driver.name %></td>
     <td><%=h driver.number %></td>
+    <td><%=h driver.results.count %></td>
+    <td><%=h driver.points %></td>
     <td><%= link_to 'Show', driver %></td>
     <td><%= link_to 'Edit', edit_driver_path(driver) %></td>
     <td><%= link_to 'Destroy', driver, :confirm => 'Are you sure?', :method => :delete %></td>

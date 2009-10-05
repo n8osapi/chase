@@ -6,18 +6,18 @@
     <th>Driver</th>
     <th>Ledlap</th>
     <th>Ledmost</th>
-    <th>Lapsled</th>
     <th>Finish</th>
+    <th>Points</th>
   </tr>
 
 <% @results.each do |result| %>
   <tr>
-    <td><%=h result.race_id %></td>
-    <td><%=h result.driver_id %></td>
+    <td><%=h result.race.name %></td>
+    <td><%=h result.driver.name %></td>
     <td><%=h result.ledlap %></td>
     <td><%=h result.ledmost %></td>
-    <td><%=h result.lapsled %></td>
     <td><%=h result.finish %></td>
+    <td><%=h result.points %></td>
     <td><%= link_to 'Show', result %></td>
     <td><%= link_to 'Edit', edit_result_path(result) %></td>
     <td><%= link_to 'Destroy', result, :confirm => 'Are you sure?', :method => :delete %></td>

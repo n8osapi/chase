@@ -1,11 +1,11 @@
 <p>
   <b>Race:</b>
-  <%=h @result.race_id %>
+  <%=h @result.race.name %>
 </p>
 
 <p>
   <b>Driver:</b>
-  <%=h @result.driver_id %>
+  <%=h @result.driver.name %>
 </p>
 
 <p>
@@ -19,15 +19,13 @@
 </p>
 
 <p>
-  <b>Lapsled:</b>
-  <%=h @result.lapsled %>
-</p>
-
-<p>
   <b>Finish:</b>
   <%=h @result.finish %>
 </p>
-
+<p>
+  <b>Points:</b>
+  <%=h @result.points %>
+</p>
 
 <%= link_to 'Edit', edit_result_path(@result) %> |
 <%= link_to 'Back', results_path %>
